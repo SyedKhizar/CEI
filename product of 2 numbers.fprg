@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-23 10:27:31 AM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MTA6MjA6MjQgQU07MjQyNQ=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MTA6Mjc6MzEgQU07MTsyNTM4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <declare name="c" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter a&quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot;Enter b&quot;" newline="True"/>
+            <input variable="b"/>
+            <assign variable="c" expression="a-b"/>
+            <output expression="&quot;product is &quot; &amp;c" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

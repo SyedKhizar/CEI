@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-23 05:32:12 PM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MDU6MDg6NDAgUE07MjQ0OA=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MDU6MzI6MTIgUE07MTsyNTUy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="r" type="Integer" array="False" size=""/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="temp" type="Integer" array="False" size=""/>
+            <assign variable="temp" expression="n"/>
+            <while expression="n&gt;0">
+                <assign variable="r" expression="n%10"/>
+                <assign variable="sum" expression="sum*10+r"/>
+                <assign variable="n" expression="n/10"/>
+            </while>
+            <assign variable="n" expression="temp"/>
+            <if expression="n==sum">
+                <then>
+                    <output expression="&quot;It a pallindrome&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;Not a pallindrome&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-23 04:41:16 PM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MTI6MjU6NDAgUE07MjQ0NQ=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MDQ6NDE6MTYgUE07NDsyNTU4"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n1" type="Integer" array="False" size=""/>
+            <declare name="n2" type="Integer" array="False" size=""/>
+            <declare name="n3" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <assign variable="n1" expression="0"/>
+            <assign variable="n2" expression="1"/>
+            <assign variable="n" expression="30"/>
+            <for variable="i" start="2" end="n" direction="inc" step="1">
+                <assign variable="n3" expression="n1+n2"/>
+                <assign variable="n1" expression="n2"/>
+                <assign variable="n2" expression="n3"/>
+                <output expression="&quot;Series is&quot; &amp;n3" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

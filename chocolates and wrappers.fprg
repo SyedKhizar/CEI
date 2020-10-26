@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-23 05:47:07 PM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MDU6MzI6MTcgUE07MjQ0OQ=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjM7MDU6NDc6MDcgUE07MTsyNTYy"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="TotalAmount" type="Integer" array="False" size=""/>
+            <declare name="PricePerChocolate" type="Integer" array="False" size=""/>
+            <declare name="CountOfWrappersToGetChocolate" type="Integer" array="False" size=""/>
+            <declare name="TotalChocolates" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter total amount&quot;" newline="True"/>
+            <input variable="TotalAmount"/>
+            <output expression="&quot;Enter Price per chocolate&quot;" newline="True"/>
+            <input variable="PricePerChocolate"/>
+            <output expression="&quot;Enter number of wrappers needed to get chocolate&quot;" newline="True"/>
+            <input variable="CountOfWrappersToGetChocolate"/>
+            <if expression="TotalAmount&lt;PricePerChocolate">
+                <then>
+                    <output expression="&quot;Money is not suffitient&quot;" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="TotalChocolates" expression="TotalAmount/PricePerChocolate"/>
+                    <assign variable="TotalChocolates" expression="TotalChocolates+(TotalChocolates-1)/(CountOfWrappersToGetChocolate-1)"/>
+                    <output expression="&quot;Total chocolates: &quot; &amp;TotalChocolates" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
