@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-27 04:34:07 PM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjc7MDQ6MjA6MTQgUE07MjQ0Ng=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjc7MDQ6MzQ6MDcgUE07MTsyNTYx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="temp" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter trmperature in fahrenheit:&quot;" newline="True"/>
+            <input variable="temp"/>
+            <assign variable="temp" expression="((temp-32)*5)/9"/>
+            <output expression="&quot;Temperature in celcius is:&quot; &amp;temp" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

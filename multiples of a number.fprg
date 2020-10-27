@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="skhizar"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-10-27 04:10:20 PM"/>
+        <attribute name="created" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjc7MDQ6MDY6MDUgUE07MjQ1MA=="/>
+        <attribute name="edited" value="c2toaXphcjtDRUkzMDcyOzIwMjAtMTAtMjc7MDQ6MTA6MjAgUE07MTsyNTUw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <declare name="m" type="Integer" array="False" size=""/>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter n&quot;" newline="True"/>
+            <input variable="n"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <assign variable="m" expression="n*i"/>
+                <output expression="&quot;multiples are: &quot; &amp;m" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
